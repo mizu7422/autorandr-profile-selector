@@ -8,5 +8,5 @@ I might not finish this because it works, but if someone that also needs this fo
 cargo build --release
 ```
 
-then add a keybind in you config to open target/release/autorand-profile-selector with floating(preference I guess)
+then add a keybind in you config to execut ./target/release/autorand-profile-selector with floating option(preference I guess)
 
