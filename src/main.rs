@@ -8,7 +8,7 @@ fn main() -> Result<(), eframe::Error> {
     let options = eframe::NativeOptions{
         ..Default::default()
     };
-    eframe::run_native("Monitor profile selector", options, Box::new(|_cc| Ok(Box::new(MyApp::default()))))
+    eframe::run_native("Autorandr Profile Selector", options, Box::new(|_cc| Ok(Box::new(MyApp::default()))))
 }
 
 struct MyApp {
@@ -82,6 +82,7 @@ impl eframe::App for MyApp {
                 }
                 if ui.input(|k| k.key_pressed(egui::Key::Enter)) {
                     let _ = Command::new("autorandr").args(["--change", self.profiles[self.selected_profile].as_str()]).status();
+                    exit(69)
                 }
                 if ui.input(|k| k.key_pressed(egui::Key::Escape)) {
                     exit(69)
