@@ -8,8 +8,10 @@ I might not finish this because it works, but if someone that also needs this fo
 cargo build --release
 ```
 
-then add a keybind in you config to execut ./target/release/autorand-profile-selector with floating option(preference I guess)
+then add a keybind in you config to execute /path-to-project/target/release/autorand-profile-selector with floating option(preference I guess)
 
 Press <kbd>Tab</kbd> to switch profile
+
 Press <kbd>Enter</kbd> to switch profile and quit
+
 Press <kbd>Esc</kbd> to quit without switching
